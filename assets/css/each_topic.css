@@ -1,0 +1,18 @@
+.topic-title {
+    margin-top: 80px;
+}
+
+/* container-one */
+.container-one {
+    justify-content: space-between;
+    margin-top: 20px;
+}
+/*end container-one */
+
+.container a h3:active {
+    font-weight: 800;
+}
+
+.suggestion-list .suggestion-item a:active {
+    font-weight: 800;
+}
