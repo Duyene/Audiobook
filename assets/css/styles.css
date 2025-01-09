@@ -25,7 +25,7 @@
     height: 100px;
     background: var(--color-two);
     border-radius: 10%;
-    border: 1px solid #928E8E;
+    border: 1px solid black;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -34,6 +34,10 @@
 
 .container .main-content .discover .discover-list .discover-item :active {
     font-weight: 800;
+}
+
+.container .main-content .discover .discover-list .discover-item i {
+    font-size: 20px;
 }
 
 .container .main-content .discover-list {
@@ -169,6 +173,35 @@
     padding-top: 25px;
 }
 
+/* bật tắt bookmark */
+#bookmark-toggle {
+    display: none;
+}
+
+.bookmark-btn {
+    cursor: pointer;
+    color: black;
+    font-size: 28px;
+    transition: background-color 0.3s ease;
+}
+
+.bookmark-off {
+    display: block;
+}
+
+.bookmark-on {
+    display: none;
+}
+
+#bookmark-toggle:checked + .bookmark-btn .bookmark-off {
+    display: none;
+}
+
+#bookmark-toggle:checked + .bookmark-btn .bookmark-on {
+    display: block;
+}
+/* end bật tắt bookmark */
+
 .container .main-sidebar p{
     width: 90%;
     margin-left: auto;
@@ -200,7 +233,36 @@
 .container .main-sidebar .play-pause i{
     font-size: 35px;
 }
-/* end section 1 */
+
+/* play-pause */
+#play-pause-toggle {
+    display: none;
+}
+
+.play-pause-btn {
+    cursor: pointer;
+    color: black;
+    font-size: 28px;
+    transition: background-color 0.3s ease;
+}
+
+.play-item {
+    display: block;
+}
+
+.pause-item {
+    display: none;
+}
+
+#play-pause-toggle:checked + .play-pause-btn .play-item {
+    display: none;
+}
+
+#play-pause-toggle:checked + .play-pause-btn .pause-item {
+    display: block;
+}
+/*end play-pause */
+/*end section one */
 
 /* section two */
 .for-you-title {

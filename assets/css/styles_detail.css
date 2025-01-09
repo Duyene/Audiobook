@@ -57,6 +57,35 @@
     font-size: 25px;
 }
 
+/* bật tắt bookmark */
+#bookmark-toggle {
+    display: none;
+}
+
+.bookmark-btn {
+    cursor: pointer;
+    color: black;
+    font-size: 28px;
+    transition: background-color 0.3s ease;
+}
+
+.bookmark-off {
+    display: block;
+}
+
+.bookmark-on {
+    display: none;
+}
+
+#bookmark-toggle:checked + .bookmark-btn .bookmark-off {
+    display: none;
+}
+
+#bookmark-toggle:checked + .bookmark-btn .bookmark-on {
+    display: block;
+}
+/* end bật tắt bookmark */
+
 .container-one .sidebar-box .book-image {
     width: 280px;
     height: 410px;
@@ -105,6 +134,35 @@
 .container-one .sidebar-box .sidebar-content .play-pause i {
     font-size: 30px;
 }
+
+/* play-pause */
+#play-pause-toggle {
+    display: none;
+}
+
+.play-pause-btn {
+    cursor: pointer;
+    color: black;
+    font-size: 28px;
+    transition: background-color 0.3s ease;
+}
+
+.play-item {
+    display: block;
+}
+
+.pause-item {
+    display: none;
+}
+
+#play-pause-toggle:checked + .play-pause-btn .play-item {
+    display: none;
+}
+
+#play-pause-toggle:checked + .play-pause-btn .pause-item {
+    display: block;
+}
+/*end play-pause */
 
 .container-one .description-box {
     width: 65%;
