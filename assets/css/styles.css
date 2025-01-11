@@ -7,6 +7,12 @@
     justify-content: space-between;
     margin-top: 90px;
 }
+
+@media (max-width: 640px){
+    .container-one {
+        flex-wrap: wrap;
+    }
+}
 .container .main-content {
     width: 57%;
     height: 100%;
@@ -15,6 +21,19 @@
     justify-items: space-between;
 }
 
+@media (max-width: 830px){
+    .container .main-content {
+        width: 50%;
+    }
+}
+
+@media (max-width: 640px){
+    .container .main-content {
+        width: 100%;
+    }
+}
+
+/* discover-box */
 .container .main-content .discover h1 {
     width: 100%;
     margin-top: 10px;
@@ -46,6 +65,75 @@
     justify-content: space-between;
 }
 
+@media (max-width: 1200px){
+    .container .main-content .discover .discover-list .discover-item {
+        width: 85px;
+        height: 85px;
+    }
+}
+
+@media (max-width: 1028px){
+    .container .main-content .discover .discover-list .discover-item {
+        width: 75px;
+        height: 75px;
+    }
+    .container .main-content .discover .discover-list .discover-item i {
+        font-size: 16px;
+    }
+}
+@media (max-width: 830px){
+    .container .main-content .discover h1 {
+        margin-bottom: 12px;
+        font-size: 18px;
+    }
+    .container .main-content .discover-list {
+        width: 85%;
+        flex-wrap: wrap;
+        align-content: space-between;
+    }
+    .container .main-content .discover .discover-list .discover-item {
+        width: 80px;
+        height: 80px;
+        margin-bottom: 20px;
+    }
+}
+@media (max-width: 640px) {
+    .container .main-content .discover-list {
+        width: 100%;
+        flex-wrap: nowrap;
+    }
+    .container .main-content .discover .discover-list .discover-item {
+        width: 68px;
+        height: 68px;
+        margin-bottom: 0px;
+    }
+}
+
+@media (max-width: 480px) {
+    .container .main-content .discover-list {
+        flex-wrap: wrap;
+    }
+    .container .main-content .discover .discover-list .discover-item {
+        width: 80px;
+        height: 80px;
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 320px) {
+    .container .main-content .discover .discover-list .discover-item {
+        width: 80px;
+        height: 80px;
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-bottom: 20px;
+    }
+}
+/* end discover-box */
+
+/* trending-box */
 .container .main-content .trending-title {
     width: 100%;
     margin-top: 80px;
@@ -126,6 +214,131 @@
     font-size: 25px;
 }
 
+@media (max-width: 1200px){
+    .container .main-content .trending-list .trending-item {
+        height: 120px;
+    }
+    .container .main-content .trending-list .trending-item .item-image {
+        width: 85px;
+        height: 105px;
+    }
+    .container .main-content .trending-list .trending-item .item-information .book-name {
+        font-size: 18px;
+        padding-bottom: 7px;
+    }
+    .container .main-content .trending-list .trending-item .trending-sidebar i {
+        font-size: 23px;
+    }
+}
+
+@media (max-width: 1028px) {
+    .container .main-content .trending-title .title {
+        width: 87%;
+    }
+    .container .main-content .trending-list .trending-item {
+        height: 110px;
+    }
+    .container .main-content .trending-list .trending-item .item-image {
+        width: 70px;
+        height: 90px;
+    }
+    .container .main-content .trending-list .trending-item .item-information .book-name {
+        font-size: 16px;
+    }
+    .container .main-content .trending-list .trending-item .trending-sidebar i {
+        font-size: 21px;
+    }
+}
+
+@media (max-width: 830px){
+    .container .main-content .trending-title {
+        width: 85%;
+        margin-top: 10px;
+    }
+    .container .main-content .trending-title .title {
+        width: 76%;
+        font-size: 18px;
+    }
+    .container .main-content .trending-list {
+        width: 85%;
+    }
+    .container .main-content .trending-list .trending-item {
+        height: 105px;
+        margin-bottom: 10px;
+    }
+    .container .main-content .trending-list .trending-item .item-information .book-name {
+        width: 80%;
+    }
+    .container .main-content .trending-list .trending-item .item-information .author {
+        margin-top: -5px;
+    }
+    .container .main-content .trending-list .trending-item .trending-sidebar i {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 640px){
+    .container .main-content .trending-title {
+        width: 100%;
+    }
+    .container .main-content .trending-title .title {
+        width: 85%;
+    }
+    .container .main-content .trending-list {
+        width: 100%;
+    }
+    .container .main-content .trending-list .trending-item .item-information {
+        width: 90%;
+    }
+    .container .main-content .trending-list .trending-item .item-information .author {
+        margin-top: -20px;
+    }
+}
+
+@media (max-width: 460px) {
+    .container .main-content .trending-title .title {
+        width: 80%;
+    }
+}
+
+@media (max-width: 320px) {
+    .container .main-content .trending-list .trending-item {
+        height: 90px;
+    }
+    .container .main-content .trending-title {
+        width: 100%;
+    }
+    .container .main-content .trending-title .title {
+        width: 75%;
+    }
+    .container .main-content .trending-list .trending-item .item-image {
+        width: 65px;
+        height: 80px;
+    }
+    .container .main-content .trending-list .trending-item .item-information .author {
+        margin-top: -10px;
+        font-size: 10px;
+    }
+    .container .main-content .trending-list .trending-item .item-information .book-name {
+        font-size: 14px;
+    }
+    .container .main-content .trending-list .trending-item .trending-sidebar {
+        padding: 5px 8px;
+    }
+    .container .main-content .trending-list .trending-item .trending-sidebar i {
+        font-size: 17px;
+    }
+    .container .main-content .trending-list .trending-item .item-information .time-item .time {
+        font-size: 10px;
+    }
+    .container .main-content .trending-list .trending-item .item-information .time-item i {
+        font-size: 12px;
+    }
+}
+
+/* end trending-box */
+
+/* main-sidebar box */
 .container .main-sidebar {
     width: 36%;
     background: var(--color-four);
@@ -261,11 +474,108 @@
 #play-pause-toggle:checked + .play-pause-btn .pause-item {
     display: block;
 }
+
+@media (max-width: 1200px){
+    .container .main-sidebar {
+        width: 38%;
+    } 
+    .container .main-sidebar .head-sidebar .image-author {
+        margin-top: 10px;
+        width: 35px;
+        height: 35px;
+    }
+    .container .main-sidebar .head-sidebar .head-information h1 {
+        margin-top: 10px;
+        font-size: 18px;
+    }
+    .container .main-sidebar .head-sidebar .head-information h3 {
+        margin-top: 5px;
+        margin-bottom: 0px;
+    }
+    .container .main-sidebar .progress-bar {
+        margin-top: 30px;
+        height: 3px;
+    }
+    .container .main-sidebar .play-pause {
+        margin-top: 20px;
+    }
+    .container .main-sidebar .play-pause i {
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 1028px){
+    .container .main-sidebar {
+        width: 40%;
+    }
+    .container .main-sidebar p {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 830px) {
+    .container .main-sidebar {
+        width: 50%;
+        height: 100%;
+    }
+    .container .main-sidebar p {
+        font-size: 12px;
+    }
+    .container .main-sidebar .play-pause {
+        width: 40%;
+    }
+}
+
+@media (max-width: 640px) {
+    .container .main-sidebar {
+        width: 100%;
+        margin-top: 90px;
+        margin-bottom: 60px;
+    }
+}
+
+@media(max-width: 320px) {
+    .container .main-sidebar .head-sidebar .image-author {
+        width: 30px;
+        height: 30px;
+    }
+    .container .main-sidebar .head-sidebar .head-information h1 {
+        font-size: 14px;    
+    }
+    .container .main-sidebar .head-sidebar .head-information h3 {
+        font-size: 10px;
+        margin-bottom: 5px;
+    }
+    .container .main-sidebar p {
+        font-size: 11px;
+    }
+    .container .main-sidebar .play-pause i {
+        font-size: 22px; 
+    }
+    .container .main-sidebar {
+        width: 100%;
+        margin-top: 50px;
+        margin-bottom: 30px;
+    }
+}
 /*end play-pause */
+/* main-sidebar box */
 /*end section one */
 
 /* section two */
 .for-you-title {
     margin-top: 80px;
+}
+
+@media (max-width: 1028px){
+    .for-you-title {
+        margin-top: 50px;
+    }
+}
+
+@media (max-width: 830px){
+    .for-you-title {
+        margin-top: 30px;
+    }
 }
 /*end section two */
