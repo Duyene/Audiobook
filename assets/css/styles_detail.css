@@ -309,6 +309,130 @@
 
 /* end section one */
 
+/* chat box */
+.container-three {
+    margin-top: 50px;
+    height: 600px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    position: relative;
+}
+.container-three .head-chat-box {
+    background: var(--color-three);
+    padding: 15px 20px;
+    font-size: 22px;
+    font-weight: 600;
+    border-radius: 10px;
+    height: 50px;
+}
+
+.container-three .chat-content {
+    height: calc(100% - 50px);
+    position: relative;
+}
+
+.chat-messages {
+    padding: 15px;
+    height: 470px;
+    overflow-y: auto;
+    position: relative;
+}
+.message {
+margin-bottom: 10px;
+}
+
+.message.user {
+text-align: right;
+}
+
+.message.user .message-content {
+background-color: var(--color-four);
+display: inline-block;
+padding: 10px;
+border-radius: 10px;
+}
+
+.message.bot {
+text-align: left;
+}
+
+.message.bot .message-content {
+background-color: #f1f1f1;
+color: black;
+display: inline-block;
+padding: 10px;
+border-radius: 8px;
+}
+.container-three .chat-content .chat-input {
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    border: 1.5px solid var(--color-four);
+    width: calc(100% - 20px); 
+    height: 50px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+#question-input {
+    border: none;
+    margin-left: 15px;
+}
+
+.container-three .chat-content .chat-input button {
+    margin-right: 15px;
+    background: var(--color-four);
+    border: none;
+    padding: 7px 15px;
+    border-radius: 10px;  
+    outline: none;
+    box-shadow: 0.1px 0.1px #999;
+    display: inline-block;
+    transition: transform 0.2s;
+}
+
+.container-three .chat-content .chat-input button:hover {
+    transform: scale(1.05);
+}
+
+.container-three .chat-content .chat-input button:active {   
+    box-shadow: 0.1px 0.1px #999; 
+    transform: translateY(4px);
+}
+
+@media (max-width: 640px) {
+    .container-three {
+        margin-top: 550px;
+    }
+    .container-three .head-chat-box {
+        font-size: 18px;
+    }
+    .message.user .message-content {
+        font-size: 12px;
+    }
+    .message.bot .message-content {
+        font-size: 12px;
+    }
+    .container-three .chat-content .chat-input {
+        height: 40px;
+    }
+    #question-input {
+        font-size: 12px;
+    }
+    .container-three .chat-content .chat-input button {
+        font-size: 12px;
+        padding: 8px 10px;
+        border-radius: 7px; 
+        margin-right: 5px;
+    }
+
+}
+/* end chat box */
+
 /* section two */
 .container-two .suggestion-title {
     margin-top: 50px;
@@ -323,7 +447,7 @@
 
 @media (max-width: 640px){
     .container-two .suggestion-title {
-        margin-top: 550px;
+        margin-top: 60px;
     }
 }
 /* end section two */

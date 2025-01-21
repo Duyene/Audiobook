@@ -63,6 +63,11 @@ h3 {
         font-size: 16px;
     }
 }
+@media (max-width: 560px){
+    .NavBar {
+        display: none;
+    }
+}
 /* end navbar */
 
 /* container-one */
@@ -130,6 +135,33 @@ h3 {
     .container-one .content .book-items h3 {
         margin-left: 10px;
         font-size: 11px;
+    }
+}
+
+@media (max-width: 560px) {
+    .container-one {
+        margin-left: 20px; 
+    }  
+    .container-one .content a {
+        margin-right: 30px;
+    }  
+}
+
+@media (max-width: 340px) {
+    .container-one .content a {
+        width: 100px;
+        margin-right: 20px;
+    }
+    .container-one .content .book-items .book-image {
+        margin-top: 8px;
+    }
+    .container-one .content .book-items h2 {
+            margin-top: 5px;
+    }
+    .container-one .content .book-items h3 {
+        font-size: 10px;
+        margin-top: 5px;
+        margin-bottom: 5px;
     }
 }
 /* end container-one */

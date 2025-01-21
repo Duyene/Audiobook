@@ -51,7 +51,7 @@ h3 {
     left: 0;
     display: flex;
     background: var(--color-one);
-    padding: 10px;
+    padding: 15px;
     align-items: center;
     z-index: 1000;
     width: 100%;
@@ -61,7 +61,7 @@ h3 {
 .search-container {
     display: flex;
     background: white;
-    padding: 2px 10px;
+    padding: 5px 10px;
     border-radius: 20px;
     border: 1px solid black;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -102,6 +102,48 @@ h3 {
 
 .header-content ul li a:active {
     font-weight: 800;
+}
+
+.bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    right: 0;
+    margin-right: 45px;
+    display: none;
+}
+
+#bar-icon {
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.dropdown-menu-bar {
+    list-style: none;
+    display: none; 
+    position: absolute;
+    top: 30px;
+    right: 10px;
+    padding: 0; 
+    background-color: var(--color-one);
+    border-radius: 5px;
+    overflow: hidden;
+    width: 100px;
+    z-index: 1000;
+}
+
+.dropdown-menu-bar li a {
+    text-decoration: none;
+    text-align: center;
+    font-size: 14px;
+    color: black;
+    display: block;
+    padding: 8px 10px;
+}
+
+.dropdown-menu-bar li a:hover {
+    background: white;
 }
 
 .personal-account {
@@ -170,22 +212,29 @@ h3 {
 
 @media (max-width: 480px){
     .search-container {
-        width: 30%;
-        margin-left: 5px;
+        margin-left: 20px;
         padding: 2px 5px;
-    }
-    .header-content ul li {
-        margin-left: 5px;
-    }
-    .header-content {
-        width: 50%;
+        width: 200px;
     }
     .search-input {
-        width: 70%;
+        width: 100%;
+    } 
+    .header-content {
+        display: none;
+    }
+    .bar {
+        display: block;
     }
     .personal-account {
         width: 25px;
         height: 25px;
+    }
+}
+
+@media (max-width: 320px) {
+    .search-container {
+        margin-left: 0px;
+        width: 120px;
     }
 }
 /* end header */
